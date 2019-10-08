@@ -49,7 +49,7 @@ function CordialPerson(greeter) {
 
 // code example for Explicit Binding
 function CordialPerson(greeter) {
-    this.greeting = 'Hello ';
+    this.greeting = 'Hello';
     this.greeter = greeter;
     this.speak = function() {
       console.log(this.greeting + this.greeter);
