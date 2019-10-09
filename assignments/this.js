@@ -32,7 +32,7 @@ const myObj = {
 myObj.sayHello('Ryan');
 // Principle 3
 function CordialPerson(greeter) {
-    this.greeting = 'Hello ';
+    this.greeting = 'Hello';
     this.greeter = greeter;
     this.speak = function() {
       console.log(this.greeting + this.greeter);
