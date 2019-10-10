@@ -12,56 +12,60 @@
 // Principle 1
 
 // code example for Window Binding
-function sayName(name){
+function myMagic(Necronomicon){
     console.log(this); //
-    return name;
+    return myMagic;
 }
-sayName("Michael");
+myMagic("Necronomicon");
 // Principle 2
 
 // code example for Implicit Binding
 const myObj = {
     greeting: 'Hello',
-    sayHello: function(name) {
-      console.log(`${this.greeting} my name is ${name}`);
+    sayHello: function(Magi) {
+      console.log(`${this.greeting} my name is ${ "The Magi King!"}`);
       console.log(this);
     }
   };
 
 // code example for New Binding
-myObj.sayHello('Ryan');
+
 // Principle 3
-function CordialPerson(greeter) {
-    this.greeting = 'Hello';
-    this.greeter = greeter;
+myObj.sayHello('Goodbye');
+function becomes(Tree) {
+    this.greeting = 'Shine I Will';
+    this.greeter = 'demon';
     this.speak = function() {
       console.log(this.greeting + this.greeter);
       console.log(this);
     };
   }
   
-  const jerry = new CordialPerson('Newman');
-  const newman = new CordialPerson('Jerry');
+  const Tree = new becomes ('Demon');
+  const newDemon = new becomes ('Tree');
   
-  jerry.speak();
-  newman.speak();
+  Tree.speak();
+  newDemon.speak();
 // Principle 4
 
 // code example for Explicit Binding
-function CordialPerson(greeter) {
-    this.greeting = 'Hello';
-    this.greeter = greeter;
+myObj.sayHello('Goodbye');
+function becomes(Tree) {
+    this.greeting = 'Shine I Will';
+    this.greeter = 'demon';
     this.speak = function() {
       console.log(this.greeting + this.greeter);
       console.log(this);
     };
   }
   
-  const Newjerry = new CordialPerson('Newman');
-  const Newnewman = new CordialPerson('Jerry');
-  
-  jerry.speak.call(newman);
-  newman.speak.apply(jerry);
+  const newTree = new becomes ('Demon');
+  const newestDemon = new becomes ('Tree');
 
-  jerry.speak();
-  newman.speak();
+Tree.speak.call(newDemon);
+newDemon.speak.apply(newTree);
+  
+  Tree.speak();
+  newDemon.speak();
+
+
