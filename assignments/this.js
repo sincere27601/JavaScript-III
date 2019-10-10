@@ -21,7 +21,7 @@ myMagic("Necronomicon");
 
 // code example for Implicit Binding
 const myObj = {
-    greeting: 'Hello',
+    greeting: 'Goodbye Boy',
     sayHello: function(Magi) {
       console.log(`${this.greeting} my name is ${ "The Magi King!"}`);
       console.log(this);
